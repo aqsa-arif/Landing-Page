@@ -1,0 +1,1458 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0 ;              margin: 0 ;           box-sizing: border-box !important;
+    font-size: 2rem;
+    list-style: none;
+    text-decoration: none;
+    --primary: #dd1c1a;
+    --secondary: #fbe9f2;
+    --dark: #04030f;
+    --paddings: 5rem 8rem;
+    font-family: 'Signika Negative', sans-serif !important;
+    user-select: none;    
+}
+p,span{    
+    font-weight: 300;
+}
+h5{
+    font-size: 2.5rem;
+    /* line-height: 120%; */
+}
+h4{
+    font-size: 3.5rem;
+    /* line-height: 120%; */
+}
+h3{
+    font-size: 5rem;
+    /* line-height: 125%; */
+}
+h2{    
+    font-size: 5.5rem;
+    /* line-height: 100%; */
+}
+ header{
+    width: 100%;
+    height:  auto;
+    padding: var(--paddings);
+    display: flex;
+    align-items:  flex-start;
+    justify-content: space-between; 
+    gap: 2rem; 
+}
+ 
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 8rem;
+    height: 7rem; 
+    box-shadow: none;
+    background-color: transparent;
+    position:  sticky;
+    top: 0;
+    left: 0;
+    z-index: 190;
+} 
+nav.navstick{
+    background: var(--dark);
+}
+nav.navstick .logo{
+     color: #ffffff;
+}
+nav.navstick .loginsys button:nth-child(1){
+     color: #ffffff;
+}
+nav.navstick ul li a{
+     color: #ffffff;
+     cursor: pointer;
+} 
+nav ul{
+    display: flex;
+    gap: 2.5rem;
+}
+nav .hamburgermenu{
+    display: none;
+}
+  nav ul li a{ 
+    color:  var(--dark);
+    cursor: pointer;
+    font-size: 2rem !important;
+    padding: 0 !important;
+    font-weight: 300;
+    cursor: pointer;
+}
+  nav ul li a:hover{  
+    color: var(--primary);
+    background-color: transparent !important;
+}
+nav > .logo {
+    color:  var(--dark);
+    font-family: 'Dancing Script', cursive !important;
+    font-weight:  bolder;
+    font-size: 4rem;
+}
+  .herosec{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+  nav .loginsys  {
+    display: flex;     
+    gap: 2.5rem;
+    align-items: center;
+}
+  nav .loginsys button:nth-child(1){
+    color:  #ffffff;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+  nav .loginsys button:nth-child(2){
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 24px;
+    color: var(--primary);
+    background:  #ffffff;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+}
+header .herosec h4{
+    color:  var(--dark);
+    font-weight: 400;
+}
+header .herosec h2{
+    margin: 0.8rem 0 1.3rem 0;
+    color:  var(--dark);
+    font-weight: 500;
+    width: 60rem;
+} 
+header .herosec h2 span{
+    margin: 0.8rem 0 1.3rem 0;
+    color:  var(--primary);
+    font-weight: 600;
+    font-size: 5.5rem;
+} 
+header .herosec  p{
+    line-height: 3rem;
+    color:  var(--dark);
+} 
+header .herosec form{
+    outline: none;
+    width: 95%;
+    border: .2rem solid  var(--primary);
+    border-radius: 24px;
+    padding: .2rem 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 0rem 0 ;
+}
+header .herosec form input{
+    padding: 0 1rem !important;
+    background: transparent !important;
+    outline: none !important;
+    border: none !important; 
+    width: 75% !important; 
+    color:  var(--dark) !important;
+    height: auto  !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    box-shadow: none !important;
+}
+header .herosec form input::placeholder{
+    color:  var(--dark);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+header .herosec form button{ 
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 24px;
+    color: #ffffff;
+    background:  var(--primary);
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.circle{
+    position: absolute;
+    background: var(--primary);
+    width: 45rem;
+    height: 45rem;
+    z-index: -1;
+    top: 0rem;
+    right: 0rem;
+    border-radius: 0 0 0 40rem ;
+    -webkit-border-radius: 0 0 0 40rem ;
+    -moz-border-radius: 0 0 0 40rem ;
+    -ms-border-radius: 0 0 0 40rem ;
+    -o-border-radius: 0 0 0 40rem ;
+}
+header .headerright { 
+    width:  45%; 
+}
+header .headerright img{ 
+    width:  100%;
+    height: 45rem; 
+}
+.worksec{
+    width: 100%;
+    background: var(--secondary);
+    padding: var(--paddings);
+    display: flex;  
+    margin: 0rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.worksec .step1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.worksec .step1 .workbox {
+    width:  100%;
+    height:  100%;     
+    width: 22rem ;
+    height: 22rem;
+    background: #ffcbcb;
+    padding: 1rem;
+    border: 2rem solid var(--primary);  
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 3rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.worksec .step1 .workbox  img{
+    width: 100%;
+    height: 100%;
+}
+.worksec .step1 span{
+    background: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 8rem;
+    border: 3px solid #ffffff;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+.worksec .step1 p{
+    font-weight: 400;
+}
+.menu{
+    width: 100%;
+    padding: var(--paddings);
+}
+.menu h3{ 
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-weight: 500;
+}
+.menu > p {
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    line-height: 3rem;
+}
+.menu .menulist{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    width:  max-content;
+    margin: 6rem auto;
+    padding: 3rem 0;
+    border-top: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--secondary);
+}
+.menu .menulist .menuitem{ 
+    cursor: pointer;
+}
+.mixitup-control-active{
+    background: var(--primary);
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+}
+.menu  .menuboxes{
+   display: flex; 
+   justify-content: center; 
+   flex-wrap: wrap; 
+}
+.menu  .menuboxes .foodmenu{
+   display: flex;
+   margin: 1rem;
+   flex-direction: column;
+   position: relative;
+   width: 36rem; 
+   flex: .4 1 36rem;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
+.menu  .menuboxes .foodmenu .price{
+    position: absolute;
+    top: 1rem;
+    width: 10rem;
+    background: var(--primary);
+    text-align: center;
+    border-radius: 2.4rem;
+    color: #ffffff;
+    padding: 0.3rem;
+    right: 1rem;   
+    z-index: 1;
+}
+.menu .menuboxes .foodmenu img{
+  width: 100%;
+  height: 30rem;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 1% 75%);
+}
+.menu .menuboxes .foodmenu svg{
+    margin-top: -6rem;
+}
+.menu  .menuboxes .foodmenu  h5{ 
+   color: var(--primary);
+   text-align: center;
+   margin: 3rem auto; 
+   width: 33rem;
+   font-weight: 500;
+}
+.menu  .menuboxes .foodmenu  p{ 
+    text-align: center;
+    padding: 0 3rem;
+}
+.menu  .menuboxes .foodmenu button{
+    background: #ffffff;
+    color: var(--primary);
+    outline: none;
+    border: none;
+    width: 13rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+} 
+.menu .menuboxes .foodmenu:hover > button {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    opacity: 1;
+    visibility:  visible;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 11;
+}
+.menu .menuboxes .foodmenu .foodbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(221, 28, 26, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: .3s linear;
+}
+.menu .menuboxes .foodmenu:hover > .foodbg {
+    opacity: 1;
+    visibility:  visible;
+}
+.menu .menuboxes .foodmenu hr {
+    width: 50%;
+    margin: 4rem auto;
+    background: var(--primary);
+    height:  3px;
+}
+.subscribe{
+    width: 100%;
+    padding: var(--paddings); 
+}
+.subscribe .subsec{ 
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./Images/rachel-park-hrlvr2ZlUNk-unsplash-min.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem 0 4rem 0;
+}
+.subscribe h4{  
+    width: 40rem; 
+    text-align: center;
+    text-transform: capitalize;    
+    margin: 0 ;
+    color: #ffffff;
+}
+.subscribe form {
+    background: #ffffff;
+    outline: none;
+    width: 50%;
+    border: .2rem solid #ffffff;
+    border-radius: 4px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.subscribe form input:first-child{
+    padding: 0 1rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 75%; 
+    color:  var(--dark);
+    box-shadow: none !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+    font-size: 2rem !important;
+}
+.subscribe form input:first-child::placeholder{
+    color:  var(--dark);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.subscribe form input[type="submit"] {
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: .4rem;
+    color: #ffffff;
+    background: var(--primary);
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+ 
+.testimonial{
+    width: 100%;
+    padding: var(--paddings);
+    margin: 4rem 0;    
+    background: var(--secondary);
+    position: relative;
+}
+.testimonial h3{
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 !important;
+}
+.testimonial .linebox1 {
+    position: absolute;
+    width: 6rem;
+    height: 9rem;
+    top: 2rem;
+    left: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+.testimonial .linebox2 {
+    position: absolute;
+    width: 6rem;
+    height: 9rem;
+    bottom: 2rem;
+    right: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+.testimonial .linebox .dot{
+   width: .6rem;
+   height: .6rem;
+   background-color: var(--primary);
+   border-radius:50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius:50%;
+   -ms-border-radius:50%;
+   -o-border-radius:50%;
+   -webkit-border-radius:50%;
+}
+.testimonial .carousel{
+    width: 100%;    
+}
+.testimonial .carousel .carousel-item{
+    width:  20rem;
+}
+.testimonial .carousel .carousel-item .client{
+    width:  100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial .carousel .carousel-item .client img{
+    width:   10rem;
+    height: 10rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.testimonial .carousel .carousel-item .client  h4{
+    margin: 2rem 0 0.5rem 0;
+    color: var(--primary);
+    font-size: 3rem;
+}
+.testimonial .carousel .carousel-item .client span{ 
+    color: var(--dark);
+}
+.testimonial .carousel .carousel-item .client  p {
+    line-height: 3rem;
+    margin: 2rem;
+    text-align: center; 
+    color: var(--dark);
+}
+.testimonial .carousel .carousel-item .client .stars{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+    align-items: center;
+}
+.testimonial .carousel .carousel-item .client .stars img{
+     width: 1.5rem;
+     height: 1.5rem; 
+} 
+
+.carousel { 
+    width: 100%;
+    height: 60rem; 
+}
+.testimonial .carousel .carousel-item {
+    width: 43rem;
+    height:  auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.carousel .indicators .indicator-item {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin: -.7rem  .5rem;
+    background-color: #ffffff;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border-radius: 50%;
+}
+.carousel .indicators .indicator-item.active {
+    background-color: var(--primary);
+}
+footer{
+    width: 100%;
+    padding: var(--paddings);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--primary);
+}
+footer > .logo {
+    color:  var(--dark);
+    font-family: 'Dancing Script', cursive !important;
+    font-weight:  bolder;
+    font-size: 4rem;
+    color: #ffffff;
+}
+footer > ul{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+footer > ul li a{
+    color: #ffffff;
+    font-weight: 300;
+}
+footer .socialmenu{    
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+footer .socialmenu a{  
+    cursor: pointer;
+}
+footer .socialmenu a img{
+    width: 5rem;
+    height: 5rem; 
+    transition: .2s ease-in; 
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -ms-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+} 
+footer .socialmenu a:hover > img{
+     transform: translateY(-.5rem);
+     -webkit-transform: translateY(-.5rem);
+     -moz-transform: translateY(-.5rem);
+     -ms-transform: translateY(-.5rem);
+     -o-transform: translateY(-.5rem);
+}
+footer .footerline{
+   color: #ffffff;
+}
+footer .footerline{
+    margin-top: 4rem;
+    padding-top: 4rem;
+    font-weight: 300;
+    border-top: 0.1rem solid var(--secondary);
+    width: 100%;
+    text-align: center;
+} 
+
+.scrollup{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem; 
+}
+#showup img{ 
+    width: 5rem;
+    height: 5rem; 
+}
+
+.signupmodal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    display: none;
+    transition:   .5s ease-in;
+    -webkit-transition:   .5s ease-in;
+    -moz-transition:   .5s ease-in;
+    -ms-transition:   .5s ease-in;
+    -o-transition:   .5s ease-in;
+}
+
+.showmodal{
+    display:  flex;
+}
+
+.signupmodal h4{
+    color: #ffffff;
+    position: fixed;
+    top: 4rem;
+    margin: 0 !important;
+}
+.signupmodal .signupcontent img{
+    width: 4rem;
+    height: 4rem;
+    position: absolute; 
+    right: 0rem;
+    top: -3.9rem;
+    cursor: pointer;
+}
+.signupmodal .signupcontent{
+    position: fixed;
+    margin-top: 4rem;
+    z-index: 201;
+    background: var(--primary);
+    width: 40rem;
+    height:  auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem; 
+    animation: zoomin .5s linear forwards ;
+    -webkit-animation: zoomin .5s linear forwards ;
+}
+
+@keyframes  zoomin {
+    0%{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+    100%{
+        transform: scale( 1);
+        -webkit-transform: scale( 1);
+        -moz-transform: scale( 1);
+        -ms-transform: scale( 1);
+        -o-transform: scale( 1);
+    }
+}
+
+.signupmodal .signupcontent h5{
+    color: #ffffff;
+    text-transform:  capitalize;
+    font-weight: 400;
+}
+.signupmodal .signupcontent form{
+  width: 100%;
+}
+.signupmodal .signupcontent .signupform input[type="text"],
+.signupmodal .signupcontent .signupform input[type="email"],
+.signupmodal .signupcontent .signupform input[type="password"]
+{
+  width: 100%;
+  padding: 1rem;
+  border-bottom: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.signupmodal .signupcontent .signupform input[type="text"]::placeholder,
+.signupmodal .signupcontent .signupform input[type="email"]::placeholder,
+.signupmodal .signupcontent .signupform input[type="password"]::placeholder
+{
+  font-size: 1.6rem;  
+  color: var(--dark);
+}
+.signupmodal .signupcontent .signupform .check{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.signupmodal .signupcontent .signupform input[type="submit"] {
+    width: 12rem;
+    padding: 1rem;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: .2rem;
+    margin: 4rem 0 1rem 0;
+    cursor: pointer;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+.signupmodal .signupcontent span {
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+.signupmodal .signupcontent span:nth-child(3) {
+    margin-left: 13rem; 
+}
+.signupmodal .signupcontent span a{ 
+    color: #ffffff;
+    font-weight:  400;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    background-color: #ffffff;
+    border: none;
+    border-bottom: none;
+    border-radius: .4rem;
+    outline: none;
+    height: auto;
+    width: 100%;
+    font-size: 2rem;
+    margin: 0 0 1.4rem 0;
+    padding: 0.7rem 1rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    box-sizing:  border-box;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position:  relative;
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+}
+[type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+    content:  none; 
+}
+[type="checkbox"]+span:not(.lever) { 
+    padding-left: .3rem; 
+    height: auto;
+    line-height: 2rem;
+    font-size: 1.6rem; 
+    color: #ffffff;
+}
+
+.searchoptions {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 0rem 1rem 0rem 1rem;
+    border-radius: 0 0 24px 24px;
+    margin: 0rem  1rem 10rem 1rem;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    -webkit-border-radius: 0 0 24px 24px;
+    -moz-border-radius: 0 0 24px 24px;
+    -ms-border-radius: 0 0 24px 24px;
+    -o-border-radius: 0 0 24px 24px;
+}
+.searchoptions .searchmenu:first-child{
+    padding-top: 2.5rem;
+}
+.searchoptions .searchmenu:last-child{
+    padding-bottom: 2.5rem;
+}
+.searchoptions .searchmenu{
+    display: none;
+    color: var(--dark);
+    font-weight: 300;
+    padding: 1rem;
+}
+
+.popup{
+    background: var(--primary);
+    padding: 1rem 2rem;
+    width: max-content;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 220;
+    font-weight: 300;
+    line-height: 3rem;
+    position: fixed;
+    top: -100%;
+    border-radius: 2.4rem;
+    left: 3rem;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    -webkit-border-radius: 2.4rem;
+    -moz-border-radius: 2.4rem;
+    -ms-border-radius: 2.4rem;
+    -o-border-radius: 2.4rem;
+}
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark);
+    z-index: 9999;
+}
+
+/* From uiverse.io by @gagan-gv */
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+   }
+   
+   .loader::before,
+   .loader::after {
+    content: '';
+    border: 7px solid var(--secondary);
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+    -webkit-animation: loader 2s linear infinite;
+}
+   
+   .loader::before {
+    animation-delay: 1s;
+   }
+   
+   @keyframes loader {
+    0% {
+     transform: scale(1);
+     opacity: 0;
+     -webkit-transform: scale(1);
+     -moz-transform: scale(1);
+     -ms-transform: scale(1);
+     -o-transform: scale(1);
+}
+   
+    50% {
+     opacity: 1;
+    }
+   
+    100% {
+     transform: scale(0);
+     opacity: 0;
+     -webkit-transform: scale(0);
+     -moz-transform: scale(0);
+     -ms-transform: scale(0);
+     -o-transform: scale(0);
+}
+   }
+
+
+/* Media Queries  */ 
+
+@media  (max-width: 1150px) {
+    .circle { 
+        width: 35rem;
+        height: 38rem; 
+    }
+    header .headerright img {
+        width: 100%;
+        height: 45rem;
+        margin-top: -1rem;
+    }
+    *{
+        --paddings: 5rem 6rem;
+    }
+     
+     nav { 
+        padding: 0 6rem; 
+    }
+    .worksec { 
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 19rem;
+        row-gap: 7rem; 
+    }
+    .testimonial .linebox1 { 
+        top: 2rem;
+        left: 6rem; 
+    }
+    .testimonial .linebox2 { 
+        bottom: 2rem;
+        right: 6rem; 
+    }
+}
+
+@media  (max-width: 1050px) {
+    header .herosec h2 { 
+        width: 52rem;
+    }
+    header .headerright {
+        width: 40%;
+    }
+    header  .herosec{
+        width: 60%;
+    }
+    .circle {
+        width: 30rem;
+        height: 38rem;
+    }
+    header .headerright img {
+        width: 100%;
+        height: 40rem; 
+    }
+    h5{
+        font-size: 2.5rem; 
+    }
+    h4{
+        font-size: 3rem; 
+    }
+    h3{
+        font-size: 4.5rem; 
+    }
+    h2{    
+        font-size: 5rem; 
+    }
+    header .herosec h2 span { 
+        font-size: 5rem;
+    }
+    .menu > p {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        line-height: 3rem;
+    }
+    .subscribe form { 
+        width: 75%; 
+    }
+}
+
+@media  (max-width: 950px ) {
+    header .herosec h2 {
+        width: 52rem;
+    }
+    .circle {
+        width: 30rem;
+        height: 35rem;
+    }
+    header .headerright img {
+        width: 100%;
+        height: 30rem; 
+        margin-top: 0;
+    }
+    header .headerright {
+        width: 34%;
+    }
+}
+
+@media  (max-width: 880px ) {
+    *{
+        --paddings: 5rem 4rem;
+    }
+    .testimonial .linebox1 {
+        top: 2rem;
+        left: 4rem;
+    }
+    .testimonial .linebox1 {
+        bottom: 2rem;
+        right: 4rem;
+    }
+}
+
+@media  (max-width: 860px ) { 
+    nav {
+        padding: 0 4rem;
+    } 
+    *{
+        --paddings: 5rem 4rem;
+    }
+    .circle{ 
+        display: none;
+    }
+    header .headerright {
+        width: 100%; 
+    }
+    header .headerright img {
+        width: 100%;
+        height: 30rem;
+        margin-top: 0;
+    }
+    header  .herosec {
+        width: 100%;
+    }
+    nav .loginsys button:nth-child(1) {
+        color: var(--dark); 
+    }
+    header { 
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    header .herosec  p { 
+        width: 80%;
+    }
+    header .herosec form {
+        outline: none;
+        width: 80%; 
+    } 
+    .menu > p {
+        text-align: center;
+        width: 95%; 
+    }
+    nav .loginsys button:nth-child(2) { 
+        color: #ffffff;
+        background: var(--primary);  
+    }
+    nav .loginsys button:nth-child(2) { 
+        padding: 0.8rem 1.5rem; 
+        width: 11rem;  
+    }
+    nav .loginsys { 
+        gap: 2rem;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
+    .worksec { 
+        column-gap: 10rem;
+        row-gap: 7rem;
+    }
+    .menu  .menuboxes .foodmenu {
+        width: 36rem;
+        flex: .7 1 32rem;
+    } 
+    h5 {
+        font-size: 2.3rem;
+    }
+}
+
+
+@media  (max-width: 780px) {
+    .menu  .menuboxes .foodmenu {
+        width: 37rem;
+        flex: .7 1 14rem;
+    }
+    .menu > p {
+        text-align: center;
+        width: 100%;
+    }  
+    nav > .logo { 
+        font-size: 3rem;
+    }
+    nav .loginsys button:nth-child(2) {
+        padding: 0.8rem 1rem;
+        width: 9rem;
+    }
+} 
+
+@media  (max-width: 710px) {
+    html{
+        font-size: 55%;
+    }
+    .menu  .menuboxes .foodmenu {
+        width: 37rem;
+        flex: .6 1 35rem;
+    }
+    .testimonial .linebox1 {
+        bottom: 2rem;
+        right: 4rem;
+        margin-top: -5rem;
+    }
+    .testimonial .linebox2 {
+        bottom: 2rem;
+        right: 6rem;
+        margin-bottom: -5rem;
+    }
+    footer{
+        margin-top: 7rem;
+    }
+    header .headerright img {
+        width: 100%;
+        height: 27rem; 
+    }
+} 
+
+@media  (max-width: 660px) {
+    nav .hamburgermenu{
+        display:  block;
+        width: 5rem ;
+        height: 5rem;        
+        position: absolute;
+        right: 4rem;     
+        top: 50%; 
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        align-items: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+    nav .hamburgermenu img{
+         width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background: var(--dark);
+    }
+    nav .logo{
+        color: #ffffff;
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+}
+nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 190%;
+    border-radius: 2rem;
+    align-items: center;
+    right: 4rem;
+    width: 35rem;
+    height: 40rem;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    background: #ffffff;
+    padding: 2rem 2rem;
+    gap: 0rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s linear;
+    -webkit-transition: .25s linear;
+    -moz-transition: .25s linear;
+    -ms-transition: .25s linear;
+    -o-transition: .25s linear;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+    nav ul li{
+        width: 100%;
+        padding: 2rem 1rem;
+        border-bottom: 1px solid var(--primary);
+    }
+    ul:not(.browser-default) {
+        padding-left: 2rem; 
+    }
+    nav .loginsys{
+        position: absolute;
+        top: 490%;
+        right: 4rem;
+        flex-direction: column;
+        width: 35rem;
+        align-items: center;
+        padding: 3rem 2rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s linear;
+        -webkit-transition: .3s linear;
+        -moz-transition: .3s linear;
+        -ms-transition: .3s linear;
+        -o-transition: .3s linear;
+}   
+    .displaymenu{
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(-8%) !important;
+        -webkit-transform: translateY(-8%) !important;
+        -moz-transform: translateY(-8%) !important;
+        -ms-transform: translateY(-8%) !important;
+        -o-transform: translateY(-8%) !important;
+   }
+   nav.navstick .loginsys button:nth-child(1) {
+    color: var(--dark);
+   }    
+    
+    nav.navstick ul li a{
+        color: var(--dark);
+    } 
+    nav .loginsys button:nth-child(1) {
+        padding: 0rem 2rem;
+        color: var(--dark);
+    }
+    
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i { 
+        line-height: 15px;
+    }
+    
+}
+
+@media  (max-width: 615px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media  (max-width: 530px) {
+    .worksec {
+        column-gap: 10rem;
+        row-gap: 7rem;
+        flex-direction: column;
+    }
+    * {
+        --paddings: 4rem 4rem;
+    }
+    .menu  .menuboxes .foodmenu {
+        width: 37rem;
+        flex: 1 1 35rem;
+    }
+    header .herosec  p {
+        width: 95%;
+    }
+    .subscribe form {
+        width: 85%;
+    }
+    header .herosec form { 
+        width: 95%;
+    }
+    .testimonial .linebox1 {
+        display: none;
+    }
+    .testimonial .linebox2 {
+         display: none;
+    }
+    .testimonial .carousel .carousel-item {
+        width: 100%;
+        padding: 2rem;
+        border-radius: 2.4rem;
+        -webkit-border-radius: 2.4rem;
+        -moz-border-radius: 2.4rem;
+        -ms-border-radius: 2.4rem;
+        -o-border-radius: 2.4rem;
+}
+}
+
+@media  (max-width: 508px) {
+    .testimonial .carousel .carousel-item {
+        width: 100%; 
+        padding: 2rem; 
+    }
+}   
+
+@media  (max-width: 470px) {
+    html{
+        font-size: 45%;
+    }
+    *{
+        --paddings: 3rem 2rem;
+    }
+    .menu  .menuboxes .foodmenu {
+        width: 30rem;
+        flex: .6 1 35rem;
+    } 
+    header .headerright img {
+        width: 100%;
+        height: 24rem; 
+    } 
+    .menu  .menuboxes .foodmenu {
+        width: 30rem;
+        flex: 1 1 35rem;
+    }
+    nav .hamburgermenu { 
+        right: 2rem; 
+    }
+    nav ul { 
+        right: 2rem; 
+    }
+    nav .loginsys{ 
+        right: 2rem; 
+    }
+    header{
+        padding-top: 4rem;
+    }
+}
+@media  (max-width: 380px) { 
+    header .herosec h2 {
+        width:  100%;
+    }
+    header .herosec p {
+        width: 100%;
+    }
+    header .herosec form {
+        width: 100%;
+    }
+    .menu  .menuboxes .foodmenu {
+        width: 30rem;
+        flex: 1 1 35rem;
+    }
+    .subscribe form {
+        width: 95%;
+    }
+    .menu .menulist {
+        display: flex;
+        gap: 4rem; 
+    }
+    .menu  .menuboxes .foodmenu {
+        width: 30rem;
+        flex: 1 1 35rem;
+    }
+    .testimonial .carousel .carousel-item { 
+        padding: 1rem; 
+    }
+}
+@media  (max-width: 430px) { 
+        
+    h5{
+        font-size: 2.3rem; 
+    }
+    h4{
+        font-size: 2.5rem; 
+    }
+    h3{
+        font-size: 3.5rem; 
+    }
+    h2{    
+        font-size: 4.5rem; 
+    }
+}
+@media  (max-width: 340px) { 
+    * {
+        --paddings: 2rem 1rem;
+    }
+    .subscribe .subsec {  
+        padding: 4rem 0 2rem 0;
+    } 
+    header .herosec form button { 
+        padding: 0.8rem 1rem; 
+    }
+    .menu .menulist { 
+        gap: 3rem; 
+        margin: 4rem auto;
+        padding: 3rem 0; 
+    }
+    header .headerright img {
+        width: 100%;
+        height: 22rem;
+    }
+    .testimonial .carousel .carousel-item {
+        width: 40rem;
+        height: auto;
+        padding: 1rem; 
+    }
+    html{
+        font-size: 40%;
+    }
+}
+
+

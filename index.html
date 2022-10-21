@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favion  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Images/Favicon/site.webmanifest">
+    <link rel="mask-icon" href="./Images/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title> Foodera </title>
+</head>
+
+<body onload="myLoadFunc()">
+
+    <div id="loading">
+    <div class="loader"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="logo">
+            foodera
+        </div>
+        <ul id="navul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Explore Menu</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div class="loginsys">
+            <button type="button"  class="modaltoggle2">Login</button>
+            <button type="button" class="modaltoggle1">Sign up</button>
+        </div>  
+        <div class="hamburgermenu">
+            <img src="./Images/menu (1).png" alt="">
+        </div>
+
+        
+    </nav>
+
+    <header> 
+        <div class="herosec" id="home">
+            <h4>Unique Food Network</h4>
+            <h2>Good <span> Food Choices  </span> Are  Good Investments.</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quas debitis provident molestias
+                repudiandae labore natus optio facere cupiditate.</p>
+
+            <form action="">
+                <input type="text" placeholder="Enter your food name" autocomplete="off" id="mysearch" onkeyup="searchFunc()">
+                <button> Find A Food</button>
+            </form>
+
+            <div class="searchoptions">
+                <a href="#Sandwitch" class="searchmenu">Rainbow Vegetable Sandwitch</a>
+                <a href="#Pizzeria" class="searchmenu"> Crispy Crust Pizzeria</a>
+                <a href="#Toast" class="searchmenu"> Raspberry French Toast</a>
+                <a href="#Steak" class="searchmenu"> Salmon Steak</a>
+                <a href="#Chicken" class="searchmenu"> Chicken Popeyes</a>
+                <a href="#Fries" class="searchmenu"> Fries McDonald</a> 
+            </div>
+        </div>
+
+        <div class="headerright">
+            <img src="./Images/delicious-fried-chicken-plate-removebg-preview.png" alt="">
+        </div>
+
+        <div class="circle"></div>
+    </header>
+
+    <section class="worksec">
+        <div class="step1">
+            <span>01 <br> Step</span>
+            <div class="workbox">
+                <img src="./Images/food.png" alt="">
+            </div>
+            <p>Choose Your Favourite</p>
+        </div>
+
+
+        <div class="step1">
+            <span>02 <br> Step</span>
+            <div class="workbox">
+                <img src="./Images/chef.png" alt="">
+            </div>
+            <p>HomeChef Will Cook</p>
+        </div>
+
+
+        <div class="step1">
+            <span>03 <br> Step</span>
+            <div class="workbox">
+                <img src="./Images/delivery-man.png" alt="">
+            </div>
+            <p>We Deliver Our Meals</p>
+        </div>
+
+
+        <div class="step1">
+            <span>04 <br> Step</span>
+            <div class="workbox">
+                <img src="./Images/31461-removebg-preview.png" alt="">
+            </div>
+            <p>Eat And Enjoy</p>
+        </div>
+
+    </section>
+
+    <section class="menu" id="menu">
+        <h3>Discover Our Menu</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam distinctio modi quibusdam eius
+            aspernatur nostrum sapiente quo fugit doloribus sunt excepturi eveniet neque pariatur cupiditate, velit
+            quasi earum eligendi.</p>
+
+        <div class="menulist">
+            <span class="menuitem" data-filter="all">All</span> 
+            <span class="menuitem" data-filter=".Meat">Meat</span>
+            <span class="menuitem" data-filter=".PanCakes">PanCakes</span>
+            <span class="menuitem" data-filter=".Vegeterian">Vegeterian</span>
+        </div>
+
+        <div class="menuboxes">
+            <div class="foodmenu mix PanCakes" id="Sandwitch">
+                <div class="foodbg"></div>
+                <div class="price">18.5$</div>
+                <img src="./Images/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash-min.jpg" alt="">
+                <h5>Rainbow Vegetable Sandwitch</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odio est. Assumenda id maxime illo
+                    facere distinctio.</p>
+                <button type="button">Order Now</button>
+                <hr>
+            </div>
+
+            <div class="foodmenu mix  Meat" id="Pizzeria">
+                <div class="foodbg"></div>
+                <div class="price">18.5$</div>
+                <img src="./Images/chad-montano-MqT0asuoIcU-unsplash-min.jpg" alt="">
+                <h5> Crispy Crust Pizzeria </h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odio est. Assumenda id maxime illo
+                    facere distinctio.</p>
+                <button type="button">Order Now</button>
+                <hr>
+            </div>
+            <div class="foodmenu mix  Vegeterian" id="Toast">
+                <div class="foodbg"></div>
+                <div class="price">18.5$</div>
+                <img src="./Images/emiliano-vittoriosi-OFismyezPnY-unsplash-min.jpg" alt="">
+                <h5> Raspberry French Toast</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odio est. Assumenda id maxime illo
+                    facere distinctio.</p>
+                <button type="button">Order Now</button>
+                <hr>
+            </div>
+            <div class="foodmenu mix  PanCakes" id="Steak">
+                <div class="foodbg"></div>
+                <div class="price">18.5$</div>
+                <img src="./Images/emile-mbunzama-cLpdEA23Z44-unsplash-min.jpg" alt="">
+                <h5> Salmon Steak</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus odio est. Assumenda id maxime illo
+                    facere distinctio.</p>
+                <button type="button">Order Now</button>
+                <hr>
+            </div>
+            <div class="foodmenu mix  Meat" id="Chicken">
+                <div class="foodbg"></div>
+                <div class="price">18.5$</div>
+                <img src="./Images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash-min.jpg" alt="">
+                <h5> Chicken Popeyes</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odio est. Assumenda id maxime illo
+                    facere distinctio.</p>
+                <button type="button">Order Now</button>
+                <hr>
+            </div>
+
+            <div class="foodmenu mix  Meat" id="Fries">
+                <div class="foodbg"></div>
+                <div class="price">18.5$</div>
+                <img src="./Images/davide-cantelli-jpkfc5_d-DI-unsplash-min.jpg" alt="">
+                <h5> Fries McDonald's </h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, odio est. Assumenda id maxime illo
+                    facere distinctio.</p>
+                <button type="button">Order Now</button>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="subscribe">
+        <div class="subsec">
+            <h4> Subscribe our newsletter and get 50% Off </h4>
+
+            <form action="">
+                <input type="email" placeholder="Enter your email">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+
+
+    <section class="testimonial" id="reviews">
+        <h3>What Our clients Say</h3>
+        <div class="linebox1 linebox">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="linebox2 linebox">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="carousel">
+
+            <a class="carousel-item" href="#">
+                <div class="client">
+                    <img src="./Images/photo-1570295999919-56ceb5ecca61-min.jpeg" alt="">
+                    <h4>James John</h4>
+                    <span>Software Developer</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae dignissimos cumque ex
+                        eligendi quibusdam non voluptatem molestias, ad vel reprehenderit iure sapiente.</p>
+
+                        <div class="stars"> 
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star (1).png" alt="">
+                        </div>
+
+                </div>
+            </a>
+
+            <a class="carousel-item" href="#">
+                <div class="client">
+                    <img src="./Images/photo-1544005313-94ddf0286df2-min.jpeg">
+                    <h4>Emily Emma</h4>
+                    <span>Web Developer</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae dignissimos cumque ex
+                        eligendi quibusdam non voluptatem molestias, ad vel reprehenderit iure sapiente.</p>
+
+                        <div class="stars"> 
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star (1).png" alt="">
+                        </div>
+                </div>
+            </a>
+
+            <a class="carousel-item" href="#">
+                <div class="client">
+                    <img src="./Images/photo-1549351512-c5e12b11e283-min.jpeg">
+                    <h4>Henry Alexandar</h4>
+                    <span>Software Enginner</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae dignissimos cumque ex
+                        eligendi quibusdam non voluptatem molestias, ad vel reprehenderit iure sapiente.</p>
+
+                    <div class="stars"> 
+                        <img src="./Images/star.png" alt="">
+                        <img src="./Images/star.png" alt="">
+                        <img src="./Images/star.png" alt="">
+                        <img src="./Images/star.png" alt="">
+                        <img src="./Images/star (1).png" alt="">
+                    </div>
+                </div>
+            </a>
+
+            <a class="carousel-item" href="#">
+                <div class="client">
+                    <img src="./Images/photo-1552374196-c4e7ffc6e126-min.jpeg">
+                    <h4>Robert Whittakar</h4>
+                    <span>Graphic Designer</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae dignissimos cumque ex
+                        eligendi quibusdam non voluptatem molestias, ad vel reprehenderit iure sapiente.</p>
+                        <div class="stars"> 
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star (1).png" alt="">
+                        </div>
+                </div>
+            </a>
+
+            <a class="carousel-item" href="#">
+                <div class="client">
+                    <img src="./Images/photo-1618835962148-cf177563c6c0-min.jpeg">
+                    <h4>Evelyn Charlotte</h4>
+                    <span>Physician</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae dignissimos cumque ex
+                        eligendi quibusdam non voluptatem molestias, ad vel reprehenderit iure sapiente.</p>
+                        <div class="stars"> 
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star.png" alt="">
+                            <img src="./Images/star (1).png" alt="">
+                        </div>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="logo">
+            foodera
+        </div>
+
+        <ul>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#menu">Explore Menu</a></li>
+            <li> <a href="#reviews"> Reviews</a></li> 
+        </ul>
+
+        <div class="socialmenu">
+            <a class="facebook" href=""><img src="./Images/facebook.png" alt=""></a> 
+            <a class="facebook" href=""><img src="./Images/twitter.png" alt=""></a> 
+            <a class="facebook" href=""><img src="./Images/linkedin.png" alt=""></a> 
+            <a class="facebook" href=""><img src="./Images/instagram.png" alt=""></a>  
+            
+        </div>
+        
+       <div class="footerline">© 2021 Foodera Design by  Diya.</div>
+
+    </footer>
+
+    <div class="signupmodal1 signupmodal" id="signup">
+ 
+        <div class="signupcontent">
+            <h5>Become a Member</h5>
+            <img src="./Images/cancel.png" alt="" class="modalclose1">
+            <div class="signupform">
+                <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="off" required >
+                <input type="password" name="password" id="password" placeholder="Password" autocomplete="off" required>
+                <div class="check"><input type="checkbox" name="checkbox" id="checkbox" required>
+                    <span>   Agree to the terms and Conditions  </span> 
+                </div>
+                <input type="submit" value="Register" onclick="register()">                
+            </div>
+
+            <span>Already a Member ? <a href="#login" onclick="signupsystem()">Log In Now</a></span>
+
+        </div>
+    </div>
+
+    <div class="loginmodal signupmodal" id="login">
+ 
+        <div class="logincontent signupcontent">
+            <h5>Become a Member</h5>
+            <img src="./Images/cancel.png" alt="" class="modalclose2">
+            <div class="signupform"> 
+                <input type="email" name="email" id="logemail" placeholder="Email Address" autocomplete="off" required >
+                <input type="password" name="password" id="logpassword" placeholder="Password" autocomplete="off" required>
+                <div class="check">
+                    <input type="checkbox" name="checkbox" id="logcheckbox" required>
+                    <span>  Remember  </span> 
+                    <span>   Forgot Password  </span> 
+                </div>
+                <input type="submit" value="Log in" onclick="login()">                
+            </div>
+
+            <span>Not A Member ? <a href="#signup" onclick="loginsystem()">Register Now</a></span>
+
+        </div>
+    </div>
+
+
+    <div class="popup"></div>
+
+
+
+    <!-- To top arrow ------------------------------------------ -->
+    <a href="#" id="showup" >
+       <img src="./Images/top.png" alt="">
+    </a> 
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+        integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  
+      <!-- Our script must be loaded after firebase references -->
+          
+    <script src="main.js"></script>
+
+</body>
+
+</html>
